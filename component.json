@@ -1,0 +1,17 @@
+{
+  "name": "formation",
+  "repo": "jheytompkins/formation",
+  "description": "A configurable animated form component using CSS3 animations.",
+  "version": "0.0.1",
+  "keywords": [],
+  "dependencies": {},
+  "development": {},
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": [
+    "index.js"
+  ],
+  "styles": [
+    "formation.css"
+  ]
+}
