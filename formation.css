@@ -1,0 +1,112 @@
+@media screen {
+	.formation {
+		list-style: none;
+		margin: 0px 0px 0px 0px;
+		/*padding: 50px 50px 50px 50px;*/
+		/*overflow:hidden;*/
+		position: relative;
+		padding: 0 0 0 0;
+		overflow: hidden;
+		height: auto;
+		-webkit-backface-visibility: hidden;
+		-webkit-transform: translateZ(0);
+	}
+	.formation-section, .formation-field {
+		display: none;
+		padding: 0 0 0 0;
+	}
+	.formation-field {
+		margin: 100px 100px 100px 100px;
+	}
+	.formation-section.current, .formation-field.current {
+		display: block;
+	}
+	.formation-section-controls {
+		width: 100%;
+		display: block;
+	}
+	.formation-section-controls button {
+		width: 50%;
+		height: 50px;
+		margin: 0;
+	}
+	.formation-section.animated {
+		-webkit-animation-duration: 1s;
+		-moz-animation-duration: 1s;
+		-o-animation-duration: 1s;
+		animation-duration: 1s;
+		-webkit-animation-fill-mode: both;
+		-moz-animation-fill-mode: both;
+		-o-animation-fill-mode: both;
+		animation-fill-mode: both;
+	}
+	/*.formation .formation-section:first-of-type [data-formation-cancel] {
+		display: none;
+	}*/
+	.formation[data-formation-responsive-nesting] .formation-section {
+		display: block;
+	}
+	.formation[data-formation-responsive-nesting] .formation-section-controls {
+		display: none;
+	}
+}
+@media screen and (max-width: 1024px) {
+	
+}
+@media screen and (max-width: 960px) {
+	
+}
+@media screen and (max-width: 800px) {
+	
+}
+@media screen and (max-width: 768px) {
+	
+}
+@media screen and (max-width: 600px) {
+	
+}
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 568px) 
+and (orientation : landscape) {
+	.formation[data-formation-responsive-nesting] .formation-section {
+		display: none;
+	}
+	.formation[data-formation-responsive-nesting] .formation-section.current {
+		display: block;
+	}
+	.formation[data-formation-responsive-nesting] .formation-section-controls {
+		display: block;
+	}
+	.formation[data-formation-is-a-parent] > .formation-section-controls {
+		display: none;
+	}
+}
+@media screen and (max-width: 480px) {
+	.formation[data-formation-responsive-nesting] .formation-section {
+		display: none;
+	}
+	.formation[data-formation-responsive-nesting] .formation-section.current {
+		display: block;
+	}
+	.formation[data-formation-responsive-nesting] .formation-section-controls {
+		display: block;
+	}
+	.formation[data-formation-is-a-parent] > .formation-section-controls {
+		display: none;
+	}
+}
+@media screen and (max-width: 320px) {
+	.formation[data-formation-responsive-nesting] .formation-section {
+		display: none;
+	}
+	.formation[data-formation-responsive-nesting] .formation-section.current {
+		display: block;
+	}
+	.formation[data-formation-responsive-nesting] .formation-section-controls {
+		display: block;
+	}
+	.formation[data-formation-is-a-parent] > .formation-section-controls {
+		display: none;
+	}
+}

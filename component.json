@@ -4,7 +4,9 @@
   "description": "A configurable animated form component using CSS3 animations.",
   "version": "0.0.1",
   "keywords": [],
-  "dependencies": {},
+  "dependencies": {
+    "jheytompkins/animate": "*"
+  },
   "development": {},
   "license": "MIT",
   "main": "index.js",
@@ -13,5 +15,6 @@
   ],
   "styles": [
     "formation.css"
-  ]
+  ],
+  "remotes": []
 }

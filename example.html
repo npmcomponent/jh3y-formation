@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>formation</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="build/build.css">
+	<script src="build/build.js"></script>
+</head>
+<body>
+	<div class="page-content">
+		<h4>formation demo</h4>
+
+		<div class="content">
+			<p>Here is a standard form with no nesting.</p>
+			<div id="form-one">
+				<h4>No sections, just fields</h4>
+
+				<fieldset>
+					<label>a field</label>
+					<input type="text" />
+				</fieldset>
+				<fieldset>
+					<label>a field</label>
+					<input type="text" />
+				</fieldset>
+				<fieldset>
+					<label>a field</label>
+					<input type="text" />
+				</fieldset>
+				<fieldset>
+					<label>a field</label>
+					<input type="text" />
+				</fieldset>
+			</div>
+			<p>And here is a form with some nesting</p>
+			<div id="nested-form">
+				<section>
+					<h4>My first section</h4>
+
+					<fieldset>
+						<label>a field</label>
+						<input type="text" />
+					</fieldset>
+					<fieldset>
+						<label>a field</label>
+						<input type="text" />
+					</fieldset>
+					<fieldset>
+						<label>a field</label>
+						<input type="text" />
+					</fieldset>
+					<fieldset>
+						<label>a field</label>
+						<input type="text" />
+					</fieldset>
+				</section>
+				<section>
+					<h4>My second section</h4>
+
+					<fieldset>
+						<label>a field</label>
+						<input type="text" />
+					</fieldset>
+					<fieldset>
+						<label>a field</label>
+						<input type="text" />
+					</fieldset>
+					<fieldset>
+						<label>a field</label>
+						<input type="text" />
+					</fieldset>
+					<fieldset>
+						<label>a field</label>
+						<input type="text" />
+					</fieldset>
+				</section>
+			</div>
+		</div>
+	</div>
+
+	<script>
+		var formation = require('formation');
+		var element = document.querySelector('#form-one');
+		var myFormation = new formation(element)
+		element = document.querySelector('#nested-form');
+		var myNestedFormation  = new formation(element);
+	</script>
+</body>
+</html>
