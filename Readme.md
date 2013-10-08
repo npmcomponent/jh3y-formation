@@ -15,7 +15,7 @@ A simple demo of formation can be seen [here](http://jsfiddle.net/3ZPgv/4/).
 
 ## Use
 
-Include necessary script and style files and simply do as in the [example page](https://github.com/jheytompkins/formation/master/example.html) page:
+Include necessary script and style files and simply do as in the [example page](https://github.com/jheytompkins/formation/blob/master/example.html) page:
 
 		var formation = require('formation');
 		var element = document.querySelector('#form-one');
