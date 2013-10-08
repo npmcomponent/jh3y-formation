@@ -63,7 +63,7 @@ The following methods are also available:
 
 	next() : navigate to the next field.
 	previous() : navigate to the previous field.
-	goToField(): navigate to the field with a  certain index.
+	goToField() : navigate to the field with a  certain index.
 
 ## Contributions and Suggestions
 
