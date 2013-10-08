@@ -17,6 +17,7 @@
 	}
 	.formation-field {
 		margin: 100px 100px 100px 100px;
+		border: none;
 	}
 	.formation-section.current, .formation-field.current {
 		display: block;
