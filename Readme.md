@@ -1,6 +1,6 @@
 # formation
 
-  A configurable animated form component compatible with [component](http://component.io) package manager. Enables developer to animate journey through a form from start to finish using CSS3 animations. Extra animations can be defined by user but [animate](https://github.com/daneden/animate.css) has been used to develop with. A component package manager version of [animate.css](http://github.com/jheytompkins/animate) has been used as a dependency with formation to get new users up and running quickly.
+  A configurable animated form component compatible with [component](https://github.com/component/component) package manager. Enables developer to animate journey through a form from start to finish using CSS3 animations. Extra animations can be defined by user but [animate](https://github.com/daneden/animate.css) has been used to develop with. A component package manager version of [animate.css](http://github.com/jheytompkins/animate) has been used as a dependency with formation to get new users up and running quickly.
 
 ## Demo
 
@@ -8,7 +8,7 @@ A simple demo of formation can be seen [here](http://jsfiddle.net/3ZPgv/4/).
 
 ## Installation
 
-  Install with [component(1)](http://component.io):
+  Install with [component(1)](https://github.com/component/component):
 
     $ component install jheytompkins/formation
 
