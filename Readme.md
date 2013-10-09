@@ -4,7 +4,7 @@
 
 ## Demo
 
-A simple demo of formation can be seen [here](http://jsfiddle.net/3ZPgv/4/).
+A simple demo of formation can be seen [here](http://jsfiddle.net/3ZPgv/5/).
 
 ## Installation
 

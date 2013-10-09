@@ -28,6 +28,7 @@ function formation(element, options) {
 	};
 	this.element = element;
 	this.options = extend(this.defaults, options);
+	this.inAnimatedState = 'false';
 	if (this.options.name) {
 		this.name = this.options.name;
 	} else if (this.element.getAttribute('id') !== null) {
@@ -48,7 +49,7 @@ formation.prototype._create = function () {
 		} else {
 			item.className = item.className + ' formation-section animated';
 		}
-		item.setAttribute('style', '-webkit-animation-duration: ' + (formation.options.animationSpeed / 1000) + ';' + '-moz-animation-duration: ' + (formation.options.animationSpeed / 1000) + ';' + '-o-animation-duration: ' + (formation.options.animationSpeed / 1000) + ';' + '-animation-duration: ' + (formation.options.animationSpeed / 1000) + ';');
+		item.setAttribute('style', '-webkit-animation-duration: ' + ((formation.options.animationSpeed / 2) / 1000) + 's;' + '-moz-animation-duration: ' + ((formation.options.animationSpeed / 2) / 1000) + 's;' + '-o-animation-duration: ' + ((formation.options.animationSpeed / 2) / 1000) + 's;' + '-animation-duration: ' + ((formation.options.animationSpeed / 2) / 1000) + 's;');
 	});
 	this.element.querySelector('fieldset').className = this.element.querySelector('fieldset').className + ' current ' + this.options.forwardSectionEntranceAnimation;
 	[].forEach.call(this.element.querySelectorAll('fieldset'), function (field, index) {
@@ -75,18 +76,24 @@ formation.prototype._move = function (direction) {
 		func,
 		entranceAnimation,
 		animateMove = function (myentrance, myexit, section) {
-			if (section) {
-				currentSection.className = currentSection.className + ' ' + myexit;
-			}
-			currentField.className = currentField.className + ' ' + myexit;
-			var animate = setTimeout(function () {
-				currentField.className = currentField.className.replace('current', '');
+			if (formation.inAnimatedState === 'false') {
+				formation.inAnimatedState = 'true';
 				if (section) {
-					currentSection.className = currentSection.className.replace('current', '');
-					destinationField.parentNode.className = destinationField.parentNode.className + ' ' + myentrance + ' current';
-				} 
-				destinationField.className = destinationField.className + ' ' + myentrance + ' current';
-			}, formation.options.animationSpeed);
+					currentSection.className = currentSection.className + ' ' + myexit;
+				}
+				currentField.className = currentField.className + ' ' + myexit;
+				var animate = setTimeout(function () {
+					currentField.className = currentField.className.replace('current', '');
+					if (section) {
+						currentSection.className = currentSection.className.replace('current', '');
+						destinationField.parentNode.className = destinationField.parentNode.className + ' ' + myentrance + ' current';
+					} 
+					destinationField.className = destinationField.className + ' ' + myentrance + ' current';
+				}, (formation.options.animationSpeed / 2));
+				setTimeout(function () {
+					formation.inAnimatedState = 'false';
+				}, formation.options.animationSpeed);
+			}
 		};
 	formation.resetAnimation();
 	if (formation.element.querySelector('section.current') !== null) {
@@ -155,13 +162,13 @@ formation.prototype._createNav = function () {
 	controlsHolder.className = 'formation-nav-ctrls';
 	var next = document.createElement('button');
 	next.setAttribute('data-formation-next', true);
-	next.innerText = 'Next';
+	next.innerHTML = 'Next';
 	next.addEventListener('click', function () {
 		formation._move('forward');
 	});
 	var previous = document.createElement('button');
 	previous.setAttribute('data-formation-previous', true);
-	previous.innerText = 'Previous';
+	previous.innerHTML = 'Previous';
 	previous.addEventListener('click', function () {
 		formation._move('backward');
 	});
