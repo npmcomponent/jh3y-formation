@@ -36,7 +36,7 @@ Can pass in options such as different animations:
 
  If you want to use formation without the component package manager you can by simply adding [jheytompkins_formation.js](https://github.com/jheytompkins/formation/master/jheytompkins_formation.js) to your script files and using in the following way:
 
-	 		var wheel = new jheytompkins_formation(element, {
+	 		var formation = new jheytompkins_formation(element, {
 	 			//options
 	 		});
 
