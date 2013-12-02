@@ -1,11 +1,11 @@
 {
   "name": "formation",
-  "repo": "jheytompkins/formation",
+  "repo": "jh3y/formation",
   "description": "A configurable animated form component using CSS3 animations.",
   "version": "0.0.1",
   "keywords": [],
   "dependencies": {
-    "jheytompkins/animate": "*"
+    "jh3y/animate": "*"
   },
   "development": {},
   "license": "MIT",

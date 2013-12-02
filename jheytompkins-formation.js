@@ -391,5 +391,5 @@ require.alias("formation/index.js", "formation/index.js");if (typeof exports == 
 } else if (typeof define == "function" && define.amd) {
   define(function(){ return require("formation"); });
 } else {
-  this["jheytompkins-formation"] = require("formation");
+  this["jh3y-formation"] = require("formation");
 }})();

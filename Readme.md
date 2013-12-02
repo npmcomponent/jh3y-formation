@@ -1,6 +1,6 @@
 # formation
 
-  A configurable animated form component compatible with [component](https://github.com/component/component) package manager. Enables developer to animate journey through a form from start to finish using CSS3 animations. Extra animations can be defined by user but [animate](https://github.com/daneden/animate.css) has been used to develop with. A component package manager version of [animate.css](http://github.com/jheytompkins/animate) has been used as a dependency with formation to get new users up and running quickly.
+  A configurable animated form component compatible with [component](https://github.com/component/component) package manager. Enables developer to animate journey through a form from start to finish using CSS3 animations. Extra animations can be defined by user but [animate](https://github.com/daneden/animate.css) has been used to develop with. A component package manager version of [animate.css](http://github.com/jh3y/animate) has been used as a dependency with formation to get new users up and running quickly.
 
 ## Demo
 
@@ -10,12 +10,12 @@ A simple demo of formation can be seen [here](http://jsfiddle.net/3ZPgv/5/).
 
   Install with [component(1)](https://github.com/component/component):
 
-    $ component install jheytompkins/formation
+    $ component install jh3y/formation
 
 
 ## Use
 
-Include necessary script and style files and simply do as in the [example page](https://github.com/jheytompkins/formation/blob/master/example.html) page:
+Include necessary script and style files and simply do as in the [example page](https://github.com/jh3y/formation/blob/master/example.html) page:
 
 		var formation = require('formation');
 		var element = document.querySelector('#form-one');
@@ -34,9 +34,9 @@ Can pass in options such as different animations:
 
 ## Use without component package manager
 
- If you want to use formation without the component package manager you can by simply adding [jheytompkins_formation.js](https://github.com/jheytompkins/formation/master/jheytompkins_formation.js) to your script files and using in the following way:
+ If you want to use formation without the component package manager you can by simply adding [jh3y_formation.js](https://github.com/jh3y/formation/master/jh3y_formation.js) to your script files and using in the following way:
 
-	 		var formation = new jheytompkins_formation(element, {
+	 		var formation = new jh3y_formation(element, {
 	 			//options
 	 		});
 
