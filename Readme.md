@@ -1,3 +1,4 @@
+*This repository is a mirror of the [component](http://component.io) module [jh3y/formation](http://github.com/jh3y/formation). It has been modified to work with NPM+Browserify. You can install it using the command `npm install npmcomponent/jh3y-formation`. Please do not open issues or send pull requests against this repo. If you have issues with this repo, report it to [npmcomponent](https://github.com/airportyh/npmcomponent).*
 # formation
 
   A configurable animated form component compatible with [component](https://github.com/component/component) package manager. Enables developer to animate journey through a form from start to finish using CSS3 animations. Extra animations can be defined by user but [animate](https://github.com/daneden/animate.css) has been used to develop with. A component package manager version of [animate.css](http://github.com/jh3y/animate) has been used as a dependency with formation to get new users up and running quickly.

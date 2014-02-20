@@ -1,0 +1,14 @@
+{
+  "name": "jh3y-formation",
+  "description": "A configurable animated form component using CSS3 animations.",
+  "version": "0.0.1",
+  "keywords": [],
+  "main": "index.js",
+  "styles": [
+    "formation.css"
+  ],
+  "dependencies": {
+    "jh3y-animate": "git://github.com/npmcomponent/jh3y-animate.git"
+  },
+  "license": "MIT"
+}
